@@ -1,16 +1,16 @@
 <body>
-    {# This is a comment! #}
-    <h1>{{ hello }}</h1>
+	{# This is a comment! #}
+	<h1>{{ hello }}</h1>
 
-    {% if allowed %}
-            {% repeat 3 times %}
-            <p>Welcome to the {{ hello }}!</p>
-            {% endrepeat %}
-    {% else %}
-            <p>No trespassing.</p>
-    {% endif %}
+	{% if allowed %}
+		{% repeat 3 times %}
+			<p>Welcome to the {{ hello }}!</p>
+		{% endrepeat %}
+	{% else %}
+		<p>No trespassing.</p>
+	{% endif %}
 
-    {#
-    <p>Hidden from the {{ hello }}...</p>
-    #}
+	{#
+	<p>Hidden from the {{ hello }}...</p>
+	#}
 </body>
